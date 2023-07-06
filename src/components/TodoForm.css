@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -7,8 +9,6 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-  
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
   --container-height: 498px;

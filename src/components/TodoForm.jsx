@@ -47,16 +47,16 @@ const  TodoForm = ({id}) => {
             <div className="todo-list">
                 <h4>ToDo List</h4>
                 <ul className="list">
-                {todoList.map((data, index) => (
-                    <li key={index}>
-                        <label>
-                            <input type="checkbox"/>
-                            {data.title}
-                        </label>
-                        <br />
-                        <a className="btn btn-danger" style={{cursor:'pointer',fontSize:'12px'}} onClick={()=>removeTodo(index)}>Delete</a>
-                    </li>
-                ))}
+                    {todoList && todoList.map((data, index) => (
+                        <li key={index}>
+                            <label>
+                                <input type="checkbox"/>
+                                {data.title}
+                            </label>
+                            <br />
+                            <a className="btn btn-danger" style={{cursor:'pointer',fontSize:'12px'}} onClick={()=>removeTodo(index)}>Delete</a>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </>
